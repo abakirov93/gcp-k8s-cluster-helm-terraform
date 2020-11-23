@@ -13,7 +13,7 @@ variable "google_region" {
 }
 
 variable "google_domain_name" {
-  default = "bsalizhan .com"
+  default = "bsalizhan.com"
   description = "- (Optional) The domain name for cluster."
 }
 variable "google_project_id" {
