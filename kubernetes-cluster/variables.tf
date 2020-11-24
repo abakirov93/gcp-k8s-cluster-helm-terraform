@@ -31,10 +31,10 @@ variable "cluster_version" {
   description = "- (Optional) The cluster version to deploy."
 }
 
-variable "google_credentials_json" {
-  default = "service-account.json"
-  description = "- (Optional) Google Service account Json file."
-}
+variable  "google_credentials" {
+   default = "old-service-account.json" # "old-service-account.json"
+   description = "- (Optional) Google Service account Json file."
+ }
 variable "sonarqube" {
   type = "map"
   default = {

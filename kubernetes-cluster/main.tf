@@ -5,5 +5,5 @@ module "gke_cluster" {
   google_project_id  = "${var.google_project_id}"
   cluster_node_count = "${var.cluster_node_count}"
   cluster_version    = "${var.cluster_version}"
-  google_credentials = "${var.google_credentials_json}"
+  google_credentials = "${var.google_credentials}" # "${file."${var.google_credentials}"
 }
